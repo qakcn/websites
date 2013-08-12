@@ -1,0 +1,47 @@
+.hide_on_load {
+	display: none;
+}
+div#slideshow_change {
+	
+}
+div#main_wrap {
+	height: 600px;
+	position: relative;
+}
+img.slideshow {
+	display: block;
+	position: absolute;
+	width: 1000px;
+	height: 562px;
+	top: 0;
+}
+div#slideshow_change {
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+div#slideshow_change a {
+	display: inline-block;
+	width: 196px;
+	height: 25px;
+	margin: 0 2px;
+	padding-top: 100px;
+	text-align: right;
+	text-decoration: none;
+	color: red;
+}
+a.slideshow_thumb.inshow {
+	box-shadow: 0 0 5px 8px #ffffff inset;
+}
+
+div#content_wrap {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 125px;
+	width: 200px;
+	padding: 30px;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	font-size: 14px;
+}

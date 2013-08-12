@@ -1,0 +1,82 @@
+/* 通用样式 */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei","Wenquanyi MicroHei";
+}
+body {
+	width: 100%;
+	background-color: #E0B3BA;
+}
+.clear_left {
+	clear: left;
+}
+
+/* 头部样式 */
+header#main_header {
+	width: 100%;
+	height: 80px;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+}
+nav#main_nav {
+	width: 1000px;
+	margin: auto;
+}
+nav#main_nav  a {
+	display: block;
+	width: 100px;
+	height: 30px;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	padding: 25px 5px;
+	float: left;
+}
+nav#main_nav  a:hover {
+background: rgba(0,0,0,0.4)
+
+}
+nav#main_nav  a.logo {
+	width: 160px;
+	height: 80px;
+	padding: 0;
+}
+
+/* 主体样式 */
+section#main {
+	background-color: #E0B3BA;
+	padding-top: 80px;
+
+}
+div#main_wrap {
+	width: 1000px;
+	margin: auto;
+}
+
+/* 脚部样式 */
+footer#main_footer {
+	width: 100%;
+	height: 100%;
+}
+div#footer_wrap {
+	width: 990px;
+	margin: auto;
+	padding: 10px 5px;
+	color: #eee;
+	font-size: 10px;
+}
+
+/* 其他样式 */
+div#top_button {
+	width: 80px;
+	height: 80px;
+	position: fixed;
+	right: 0;
+	bottom: 20px;
+}
+div#top_button:hover {
+	
+}
