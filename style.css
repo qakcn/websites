@@ -1,3 +1,8 @@
+/* 旧浏览器兼容 */
+article, aside, footer, header, legend, nav, section {
+	display: block;
+}
+
 /* 通用样式 */
 * {
 	margin: 0;
@@ -6,10 +11,25 @@
 }
 body {
 	width: 100%;
-	background-color: #E0B3BA;
+	background-color: #333;
+}
+img {
+	border: none;
+}
+.left {
+	float: left;
 }
 .clear_left {
 	clear: left;
+}
+.right {
+	float: right;
+}
+.clear_right {
+	clear: right;
+}
+.clear_both {
+	clear: both;
 }
 
 /* 头部样式 */
@@ -19,35 +39,64 @@ header#main_header {
 	background-color: #333;
 	position: fixed;
 	top: 0;
+	z-index: 99999;
 }
 nav#main_nav {
 	width: 1000px;
 	margin: auto;
 }
-nav#main_nav  a {
-	display: block;
+nav#main_nav ul.nav_items > li {
 	width: 100px;
-	height: 30px;
+	height: 80px;
 	font-size: 20px;
-	color: white;
-	text-decoration: none;
 	text-align: center;
-	padding: 25px 5px;
 	float: left;
+	list-style: none;
 }
-nav#main_nav  a:hover {
-background: rgba(0,0,0,0.4)
-
+nav#main_nav ul.nav_items > li:hover{
+	background: #000;
 }
-nav#main_nav  a.logo {
+nav#main_nav ul.nav_items li.logo {
 	width: 160px;
 	height: 80px;
 	padding: 0;
 }
+nav#main_nav ul.nav_items li a {
+	display: block;
+	padding: 25px 5px;
+	width: 90px;
+	height: 30px;
+	text-decoration: none;
+	color: white;
+}
+nav#main_nav ul.nav_items li.logo a {
+	padding: 0;
+}
+nav#main_nav ul.dropdown {
+	display: none;
+}
+nav#main_nav ul.dropdown li {
+	list-style: none;
+	width: 100px;
+	height: 40px;
+	background-color: #333;
+	background-color: rgba(0,0,0,0.6);
+}
+nav#main_nav ul.dropdown li:hover {
+	background: #000;
+}
+nav#main_nav ul.dropdown li a {
+	display: block;
+	width: 100%;
+	height: 30px;
+	padding: 5px 0;
+	text-decoration: none;
+	color: white;
+}
 
 /* 主体样式 */
 section#main {
-	background-color: #E0B3BA;
+	background-color: #fefefe;
 	padding-top: 80px;
 
 }

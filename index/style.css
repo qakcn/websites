@@ -1,8 +1,20 @@
+/* 覆盖主CSS属性 */
+body {
+	background-color: #E0B3BA;
+}
+section#main {
+	background-color: #E0B3BA;
+}
+
+/* 加载时隐藏 */
 .hide_on_load {
 	display: none;
 }
+
+/* 主页幻灯片样式 */
 div#slideshow_change {
-	
+	background-color: #000;
+	background-color: rgba(0,0,0,0.5);
 }
 div#main_wrap {
 	height: 600px;
@@ -18,6 +30,7 @@ img.slideshow {
 div#slideshow_change {
 	position: absolute;
 	bottom: 0;
+	background-color: #000;
 	background-color: rgba(0,0,0,0.5);
 }
 div#slideshow_change a {
@@ -34,13 +47,14 @@ a.slideshow_thumb.inshow {
 	box-shadow: 0 0 5px 8px #ffffff inset;
 }
 
-div#content_wrap {
+aside#content_wrap {
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 125px;
 	width: 200px;
 	padding: 30px;
+	background-color: #333;
 	background-color: rgba(0,0,0,0.5);
 	color: white;
 	font-size: 14px;
