@@ -12,10 +12,6 @@ section#main {
 }
 
 /* 主页幻灯片样式 */
-div#slideshow_change {
-	background-color: #000;
-	background-color: rgba(0,0,0,0.5);
-}
 div#main_wrap {
 	height: 600px;
 	position: relative;
@@ -26,6 +22,13 @@ img.slideshow {
 	width: 1000px;
 	height: 562px;
 	top: 0;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+div#slideshow_change {
+	background-color: #000;
+	background-color: rgba(0,0,0,0.5);
 }
 div#slideshow_change {
 	position: absolute;
@@ -47,15 +50,16 @@ a.slideshow_thumb.inshow {
 	box-shadow: 0 0 5px 8px #ffffff inset;
 }
 
-aside#content_wrap {
+aside#sidebar {
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 125px;
-	width: 200px;
-	padding: 30px;
+	width: 250px;
+	padding: 25px;
 	background-color: #333;
 	background-color: rgba(0,0,0,0.5);
 	color: white;
 	font-size: 14px;
+	box-shadow: none;
 }

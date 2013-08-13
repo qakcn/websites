@@ -4,7 +4,7 @@
 	<!-- 元数据 -->
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1" />
 
 	<!-- 外部文件 -->
 	<link rel="stylesheet" href="style.css" />
@@ -29,29 +29,35 @@
 	<header id="main_header" class="hide_on_load">
 		<nav id="main_nav">
 			<ul class="nav_items">
-			<li class="logo"><a href="index.html" title="网站首页"><img alt="Logo" src="images/logo.png" /></a></li>
-			<li class="dropdown_menu"><a href="javascript:void(0);">我们</a>
+			<li class="logo"><a href="../index.html"><img alt="Logo" src="images/logo.png" title="黄竹林生态土鸡养殖" /></a></li>
+			<li class="dropdown_menu"><a href="about/">关于</a>
 				<ul class="dropdown">
-					<li><a href="about.html">关于</a></li>
-					<li><a href="#">理念</a></li>
-					<li><a href="#">环境</a></li>
+					<li><a href="about/us.html">我们</a></li>
+					<li><a href="about/ideas.html">理念</a></li>
+					<li><a href="about/environment.html">环境</a></li>
 				</ul>
 			</li>
-			<li class="dropdown_menu"><a href="javascript:void(0);">业务</a>
+			<li class="dropdown_menu"><a href="business/">业务</a>
 				<ul class="dropdown">
-					<li><a href="#">产品</a></li>
-					<li><a href="#">销售</a></li>
-					<li><a href="#">采购</a></li>
+					<li><a href="business/product.html">产品</a></li>
+					<li><a href="business/market.html">销售</a></li>
+					<li><a href="business/">采购</a></li>
 				</ul>
 			</li>
-			<li class="dropdown_menu"><a href="blog/index.php">资料</a>
+			<li class="dropdown_menu"><a href="blog/">资料</a>
 				<ul class="dropdown">
-					<li><a href="#">日志</a></li>
-					<li><a href="#">图库</a></li>
-					<li><a href="#">技术</a></li>
+					<li><a href="blog/category/diary">日志</a></li>
+					<li><a href="blog/category/gallery">图库</a></li>
+					<li><a href="blog/category/technique">技术</a></li>
 				</ul>
 			</li>
 			</ul>
+			<div id="search_bar">
+				<form >
+				<input type="text" name="s" placeholder="搜索">
+				<input type="submit" value="搜索">
+				</form>
+			</div>
 			<div class="clear_both"></div>
 		</nav>
 	</header>
@@ -67,19 +73,22 @@
 				<img class="slideshow p05" src="index/05.jpg" alt="promo-pic-05" style="display:none;" />
 				<div id="slideshow_change" class="hide_on_load"><a href="javascript:void(0);" class="slideshow_thumb inshow" id="t01" style="background-image: url(index/01_thumb.jpg)" data-bgcolor="#E0B3BA">古河渚</a><a href="javascript:void(0);" class="slideshow_thumb" id="t02" style="background-image: url(index/02_thumb.jpg)" data-bgcolor="#CFD3C6">坂上智代</a><a href="javascript:void(0);" class="slideshow_thumb" id="t03" style="background-image: url(index/03_thumb.jpg)" data-bgcolor="#CBB5E0">藤林杏</a><a href="javascript:void(0);" class="slideshow_thumb" id="t04" style="background-image: url(index/04_thumb.jpg)" data-bgcolor="#B0A9D8">一之濑琴美</a><a href="javascript:void(0);" class="slideshow_thumb" id="t05" style="background-image: url(index/05_thumb.jpg)" data-bgcolor="#CBB5E0">藤林杏</a></div>
 			</div>
-			<aside id="content_wrap" class="hide_on_load">欢迎访问</aside>
+			<aside id="sidebar" class="hide_on_load">欢迎访问</aside>
 		</div>
 	</section>
 	
 	<!-- 页脚信息 -->
 	<footer id="main_footer" class="hide_on_load">
 		<div id="footer_wrap">
-		&copy;2013 黄竹林生态土鸡养殖 版权所有
-		网页制作：
+			<p class="right"><a target="_blank" href="http://www.w3.org/html/logo/">
+<img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="83" height="32" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics"></a><br><a target="_blank" href="http://validator.w3.org/check?uri=http://yntuji.com/index.html">Validator</a></p>
+			<p>&copy;2013 黄竹林生态土鸡养殖 版权所有</p>
+			<p>网站制作维护：Quadra Works（<a href="http://tsukkomi.org" target="_blank">qakcn</a>、<a href="http://sakurakanade.com" target="_blank">小Q</a>）</p>
+			<p><a href="privacy.html">隐私</a> | <a href="legal.html">法律</a> | <a href="sitemap.html">站点地图</a></p>
 		</div>
 	</footer>
 	
 	<!-- 返回顶部按钮 -->
-	<div id="top_button" style="display:none;" title="返回顶部">Goto Top</div>
+	<div id="top_button" style="display:none;" title="返回顶部"></div>
 </body>
 </html>

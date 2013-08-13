@@ -16,6 +16,12 @@ body {
 img {
 	border: none;
 }
+a {
+	color: palegreen;
+}
+a:hover {
+	color: white;
+}
 .left {
 	float: left;
 }
@@ -30,6 +36,12 @@ img {
 }
 .clear_both {
 	clear: both;
+}
+.align_right {
+	text-align: right;
+}
+.align_center {
+	text-align: center;
 }
 
 /* 头部样式 */
@@ -67,7 +79,7 @@ nav#main_nav ul.nav_items li a {
 	width: 90px;
 	height: 30px;
 	text-decoration: none;
-	color: white;
+	color: #f8f8f8;
 }
 nav#main_nav ul.nav_items li.logo a {
 	padding: 0;
@@ -91,19 +103,52 @@ nav#main_nav ul.dropdown li a {
 	height: 30px;
 	padding: 5px 0;
 	text-decoration: none;
-	color: white;
+	color: #f8f8f8;
 }
 
 /* 主体样式 */
 section#main {
-	background-color: #fefefe;
-	padding-top: 80px;
-
+	background-color: #f8f8f8;
+	margin-top: 80px;
 }
 div#main_wrap {
 	width: 1000px;
 	margin: auto;
 }
+.content_wrap {
+	width: 660px;
+	+width: 658px;
+	_width: 658px;
+	margin: 10px;
+	padding: 10px;
+	background-color: white;
+	box-shadow: 2px 2px 2px 2px #ccc;
+}
+
+/* 边栏样式 */
+aside#sidebar {
+	width: 300px;
+}
+aside#sidebar > ul > li {
+	list-style: none;
+	margin: 10px;
+	width:280px;
+	color: #f8f8f8;
+	background-color: #7f7f7f;
+	box-shadow: 2px 2px 2px 2px #ccc;
+}
+aside#sidebar > ul > li > header {
+	width: 260px;
+	padding: 10px;
+	background-color: black;
+	font-size: 16px;
+}
+aside#sidebar > ul > li > div {
+	width: 260px;
+	padding: 10px;
+	font-size: 14px;
+}
+
 
 /* 脚部样式 */
 footer#main_footer {
@@ -113,9 +158,12 @@ footer#main_footer {
 div#footer_wrap {
 	width: 990px;
 	margin: auto;
-	padding: 10px 5px;
-	color: #eee;
-	font-size: 10px;
+	padding: 5px;
+	color: #f8f8f8;
+	font-size: 12px;
+}
+footer#main_footer p{
+	margin: 2px 0;
 }
 
 /* 其他样式 */
@@ -124,8 +172,10 @@ div#top_button {
 	height: 80px;
 	position: fixed;
 	right: 0;
-	bottom: 20px;
+	bottom: 60px;
+	background-image: url(images/icons.png);
+	opacity: 0.5;
 }
 div#top_button:hover {
-	
+	opacity: 0.8
 }
