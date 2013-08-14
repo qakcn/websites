@@ -1,7 +1,6 @@
 /* 旧浏览器兼容 */
-article, aside, footer, header, legend, nav, section {
-	display: block;
-}
+article, aside, footer, header, legend, nav, section { display: block; }
+time { display: inline; }
 
 /* 通用样式 */
 * {
@@ -17,7 +16,7 @@ img {
 	border: none;
 }
 a {
-	color: palegreen;
+	color: lightskyblue;
 }
 a:hover {
 	color: white;

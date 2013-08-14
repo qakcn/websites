@@ -1,9 +1,9 @@
 /* 覆盖主CSS属性 */
 body {
-	background-color: #E0B3BA;
+	background-color: #dddddd;
 }
 section#main {
-	background-color: #E0B3BA;
+	background-color: #dddddd;
 }
 
 /* 加载时隐藏 */
@@ -20,7 +20,7 @@ img.slideshow {
 	display: block;
 	position: absolute;
 	width: 1000px;
-	height: 562px;
+	height: 600px;
 	top: 0;
 	-moz-user-select: none;
 	-webkit-user-select: none;
@@ -44,7 +44,7 @@ div#slideshow_change a {
 	padding-top: 100px;
 	text-align: right;
 	text-decoration: none;
-	color: red;
+	color: #f8f8f8;
 }
 a.slideshow_thumb.inshow {
 	box-shadow: 0 0 5px 8px #ffffff inset;
@@ -55,11 +55,17 @@ aside#sidebar {
 	top: 0;
 	right: 0;
 	bottom: 125px;
-	width: 250px;
-	padding: 25px;
-	background-color: #333;
-	background-color: rgba(0,0,0,0.5);
-	color: white;
-	font-size: 14px;
 	box-shadow: none;
 }
+aside#sidebar > ul > li {
+	background-color: rgba(51,51,51,0.8);
+	box-shadow: none;
+}
+aside#sidebar > ul > li > header {
+	background-color: rgba(0,0,0,0.5);
+}
+div#news_feed li {
+	list-style: none;
+	margin-bottom: 10px;
+}
+

@@ -11,6 +11,18 @@ $(function(){
 	$('a.slideshow_thumb').on('click',function(){
 		changeSlide(this.id.substr(1));
 	});
+	
+	$.get('blog/api/get_recent_posts/?post_type=post&count=8&include=title,url,date&date_format=n月j日', function(data){
+		$('div#news_feed ul').empty();
+		for(var i=0;i<data.posts.length;i++) {
+			var post=data.posts[i];
+			var title=post.title;
+			var titleslice=title.length>16 ? (title.slice(0,16)+'...') : title;
+			var pubdate=post.date;
+			var link=post.url;
+			$('div#news_feed ul').append('<li><a href="'+link+'" title="'+title+'">'+titleslice+'</a><time class="right">'+pubdate+'</time></li>');
+		}
+	},'json');
 });
 
 function autoSlide(){
@@ -21,7 +33,7 @@ function autoSlide(){
 	}
 }
 
-window.setInterval('autoSlide()',8000);
+window.setInterval('autoSlide()',5000);
 
 function changeSlide(name) {
 	$('img.slideshow:not(.p'+name+')').fadeOut('slow');

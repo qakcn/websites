@@ -5,6 +5,7 @@ document.createElement("nav");
 document.createElement("article");
 document.createElement("section");
 document.createElement("aside");
+document.createElement("time");
 
 $(function(){
 	loadtime=new Date(); //页面加载完成时间
