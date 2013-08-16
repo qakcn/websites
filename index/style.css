@@ -25,6 +25,7 @@ img.slideshow {
 	-moz-user-select: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
+	user-select: none;
 }
 div#slideshow_change {
 	position: absolute;
@@ -36,9 +37,6 @@ div#slideshow_change > div {
 	height: 118px;
 	margin: 0 2px;
 	vertical-align: top;
-}
-div#slideshow_change > div.inshow {
-	box-shadow: 0 0 5px 8px #ffffff inset;
 }
 div#slideshow_change > div > div {
 	overflow: hidden;
@@ -53,6 +51,11 @@ div#slideshow_change > div > div {
 	-moz-user-select: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
+}
+div#slideshow_change > div.inshow > div {
+	height: 25px;
+	margin-top: 73px;
+	padding: 10px;
 }
 
 /* 边栏样式 */

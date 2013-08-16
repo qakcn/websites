@@ -114,7 +114,10 @@ div#search_bar {
 	background-color: white;
 }
 div#search_bar label {
-	
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 input#s {
 	font-size: 20px;
