@@ -105,6 +105,26 @@ nav#main_nav ul.dropdown li a {
 	color: #f8f8f8;
 }
 
+div#search_bar {
+	font-size: 20px;
+	height: 30px;
+	margin: 20px 0;
+	padding: 5px;
+	float: right;
+	background-color: white;
+}
+div#search_bar label {
+	
+}
+input#s {
+	font-size: 20px;
+	border: none;
+	width: 0;
+	display: none;
+	border-bottom: 2px solid black;
+	outline: none;
+}
+
 /* 主体样式 */
 section#main {
 	background-color: #f8f8f8;

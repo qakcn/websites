@@ -24,7 +24,7 @@
 	<header id="main_header" class="hide_on_load">
 		<nav id="main_nav">
 			<ul class="nav_items">
-			<li class="logo"><a href="../index.html"><img alt="Logo" src="images/logo.png" title="黄竹林生态土鸡养殖" /></a></li>
+			<li class="logo"><a href="./"><img alt="Logo" src="images/logo.png" title="黄竹林生态土鸡养殖" /></a></li>
 			<li class="dropdown_menu"><a href="about/">关于</a>
 				<ul class="dropdown">
 					<li><a href="about/us.html">我们</a></li>
@@ -48,9 +48,10 @@
 			</li>
 			</ul>
 			<div id="search_bar">
-				<form >
-				<input type="text" name="s" placeholder="搜索">
-				<input type="submit" value="搜索">
+				<form role="search" method="get" action="blog/">
+					<label for="s">搜索</label>
+					<input type="search" name="s" title="搜索" id="s" placeholder="搜索资料库">
+					<input style="display:none;" type="submit" value="搜索">
 				</form>
 			</div>
 			<div class="clear_both"></div>
@@ -58,7 +59,7 @@
 	</header>
 	
 	<!-- 主体部分 -->
-	<section id="main" class="clear_both">
+	<section id="main">
 		<div id="main_wrap">
 			<div id="slideshow">
 				<img class="slideshow p01" src="index/01.jpg" alt="promo-pic-01" />
@@ -66,7 +67,7 @@
 				<img class="slideshow p03" src="index/03.jpg" alt="promo-pic-03" style="display:none;" />
 				<img class="slideshow p04" src="index/04.jpg" alt="promo-pic-04" style="display:none;" />
 				<img class="slideshow p05" src="index/05.jpg" alt="promo-pic-05" style="display:none;" />
-				<div id="slideshow_change" class="hide_on_load"><a href="javascript:void(0);" class="slideshow_thumb inshow" id="t01" style="background-image: url(index/01_thumb.jpg)" data-bgcolor="#dddddd">健康</a><a href="javascript:void(0);" class="slideshow_thumb" id="t02" style="background-image: url(index/02_thumb.jpg)" data-bgcolor="#ddffdd">绿色</a><a href="javascript:void(0);" class="slideshow_thumb" id="t03" style="background-image: url(index/03_thumb.jpg)" data-bgcolor="#ffddff">环保</a><a href="javascript:void(0);" class="slideshow_thumb" id="t04" style="background-image: url(index/04_thumb.jpg)" data-bgcolor="#ffffdd">生态</a><a href="javascript:void(0);" class="slideshow_thumb" id="t05" style="background-image: url(index/05_thumb.jpg)" data-bgcolor="#ddffff">网站建设中</a></div>
+				<div id="slideshow_change" class="hide_on_load"><div class="inshow" id="t01" style="background-image: url(index/01_thumb.jpg)" data-bgcolor="#dddddd"><div>健康</div></div><div id="t02" style="background-image: url(index/02_thumb.jpg)" data-bgcolor="#ddffdd"><div>绿色</div></div><div id="t03" style="background-image: url(index/03_thumb.jpg)" data-bgcolor="#ffddff"><div>环保</div></div><div id="t04" style="background-image: url(index/04_thumb.jpg)" data-bgcolor="#ffffdd"><div>生态</div></div><div id="t05" style="background-image: url(index/05_thumb.jpg)" data-bgcolor="#ddffff"><div>网站建设中</div></div></div>
 			</div>
 			<aside id="sidebar" class="hide_on_load">
 				<ul>

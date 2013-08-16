@@ -27,29 +27,35 @@ img.slideshow {
 	-ms-user-select: none;
 }
 div#slideshow_change {
-	background-color: #000;
-	background-color: rgba(0,0,0,0.5);
-}
-div#slideshow_change {
 	position: absolute;
 	bottom: 0;
-	background-color: #000;
-	background-color: rgba(0,0,0,0.5);
 }
-div#slideshow_change a {
+div#slideshow_change > div {
 	display: inline-block;
 	width: 196px;
-	height: 25px;
+	height: 118px;
 	margin: 0 2px;
-	padding-top: 100px;
+	vertical-align: top;
+}
+div#slideshow_change > div.inshow {
+	box-shadow: 0 0 5px 8px #ffffff inset;
+}
+div#slideshow_change > div > div {
+	overflow: hidden;
+	width:176px;
+	height: 0;
+	margin-top: 118px;
+	padding: 0 10px;
 	text-align: right;
 	text-decoration: none;
 	color: #f8f8f8;
-}
-a.slideshow_thumb.inshow {
-	box-shadow: 0 0 5px 8px #ffffff inset;
+	background-color: rgba(0,0,0,0.6);
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
 }
 
+/* 边栏样式 */
 aside#sidebar {
 	position: absolute;
 	top: 0;

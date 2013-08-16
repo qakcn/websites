@@ -29,6 +29,17 @@ $(function(){
 	
 	//返回顶部按钮事件响应
 	$('div#top_button').click(function(){
-		$(document.documentElement).animate({scrollTop: '0'});
+		if(navigator.userAgent.match(/AppleWebKit/)) {
+			$('body').scrollTop(0);
+		}else {
+			$('html').animate({scrollTop: '0'},'fast');
+		}
+	});
+	
+	$('div#search_bar').click(function(){
+		$('input#s:hidden').show().animate({width:'200px'},'fast',function(){$(this).focus();});
+	});
+	$('input#s').blur(function(){
+		$('input#s').animate({width:'0px'},'fast',function(){$(this).hide();});
 	});
 });
