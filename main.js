@@ -28,11 +28,11 @@ $(function(){
 	});
 	
 	//返回顶部按钮事件响应
-	$('div#top_button').click(function(){
+	$('div#top_button').on('click',function(){
 		if(navigator.userAgent.match(/AppleWebKit/)) {
 			$('body').scrollTop(0);
 		}else {
-			$('html').animate({scrollTop: '0'},'fast');
+			$('html').animate({scrollTop: 0},'fast');
 		}
 	});
 	
@@ -43,3 +43,7 @@ $(function(){
 		$('input#s').animate({width:'0px'},'fast',function(){$(this).hide();});
 	});
 });
+
+function scrolltotop() {
+
+}
