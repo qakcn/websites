@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="index/style.css" />
 	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js"></script>
 	<script src="jquery.color-2.1.2.min.js"></script>
+	<script src="jquery.mousewheel-3.1.3.min.js"></script>
 	<script src="main.js"></script>
 	<script src="index/main.js"></script>
 
@@ -21,7 +22,7 @@
 </head>
 <body>
 	<!-- 头部导航 -->
-	<header id="main_header" class="hide_on_load">
+	<header id="main_header">
 		<nav id="main_nav">
 			<ul class="nav_items">
 			<li class="logo"><a href="./"><img alt="Logo" src="images/logo.png" title="黄竹林生态土鸡养殖" /></a></li>
@@ -60,46 +61,34 @@
 	
 	<!-- 主体部分 -->
 	<section id="main">
-		<div id="main_wrap">
-			<div id="slideshow">
-				<img class="slideshow p01" src="index/01.jpg" alt="promo-pic-01" />
-				<img class="slideshow p02" src="index/02.jpg" alt="promo-pic-02" style="display:none;" />
-				<img class="slideshow p03" src="index/03.jpg" alt="promo-pic-03" style="display:none;" />
-				<img class="slideshow p04" src="index/04.jpg" alt="promo-pic-04" style="display:none;" />
-				<img class="slideshow p05" src="index/05.jpg" alt="promo-pic-05" style="display:none;" />
-				<div id="slideshow_change" class="hide_on_load"><div class="inshow" id="t01" style="background-image: url(index/01_thumb.jpg)" data-bgcolor="#dddddd"><div>健康</div></div><div id="t02" style="background-image: url(index/02_thumb.jpg)" data-bgcolor="#ddffdd"><div>绿色</div></div><div id="t03" style="background-image: url(index/03_thumb.jpg)" data-bgcolor="#ffddff"><div>环保</div></div><div id="t04" style="background-image: url(index/04_thumb.jpg)" data-bgcolor="#ffffdd"><div>生态</div></div><div id="t05" style="background-image: url(index/05_thumb.jpg)" data-bgcolor="#ddffff"><div>网站建设中</div></div></div>
+		<div id="layer_tree">
+			<div id="layer_main">
+				<div class="cbox">
+					<h1>健康</h1>
+					<p>玉米、鱼粉、豆粕，精选优质原料，加上精心配比，保证鸡只获得全面的营养，健康生长。也为您提供优质的营养。</p>
+				</div>
+				<div class="cbox">
+					<h1>安全</h1>
+					<p>所有鸡只都按照严格的程序进行免疫，所有药物只在必要的最低限度内使用，疫苗药品均符合兽药GMP规范，保证您吃到安全放心的鸡肉。</p>
+				</div>
+				<div class="cbox">
+					<h1>生态</h1>
+					<p>育成期鸡只全面放养，开放、自由的环境，保证鸡肉的品质达到最生态的状态，肉质细腻、香味浓郁、美味可口。</p>
+				</div>
+				<div id="layer_grass"></div>
 			</div>
-			<aside id="sidebar" class="hide_on_load">
-				<ul>
-					<li>
-						<header>欢迎访问</header>
-						<div>黄竹林生态土鸡养殖场，位于云南省西双版纳傣族自治州勐海县勐满镇，秉持绿色、安全、健康的理念，为您养殖最好的土鸡。</div>
-					</li>
-					<li>
-						<header>最新动态</header>
-						<div id="news_feed">
-							<ul>
-								<li>Loading...</li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-			</aside>
 		</div>
 	</section>
 	
-	<!-- 页脚信息 -->
-	<footer id="main_footer" class="hide_on_load">
-		<div id="footer_wrap">
-			<p class="right"><a target="_blank" href="http://www.w3.org/html/logo/">
-<img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="83" height="32" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics"></a><br><a target="_blank" href="http://validator.w3.org/check?uri=http://yntuji.com/index.html">Validator</a></p>
-			<p>&copy;2013 黄竹林生态土鸡养殖 版权所有</p>
-			<p>网站制作维护：Quadra Works（<a href="http://tsukkomi.org" target="_blank">qakcn</a>、<a href="http://sakurakanade.com" target="_blank">小Q</a>）</p>
-			<p><a href="privacy.html">隐私</a> | <a href="legal.html">法律</a> | <a href="sitemap.html">站点地图</a></p>
-		</div>
+	<footer id="main_footer">
+		<ul>
+			<li>
+				<header>最新动态</header>
+				<ul>
+					<li>Loading...</li>
+				</ul>
+			</li>
+		</ul>
 	</footer>
-	
-	<!-- 返回顶部按钮 -->
-	<div id="top_button" style="display:none;" title="返回顶部"></div>
 </body>
 </html>

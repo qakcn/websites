@@ -30,9 +30,9 @@ $(function(){
 	//返回顶部按钮事件响应
 	$('div#top_button').on('click',function(){
 		if(navigator.userAgent.match(/AppleWebKit/)) {
-			$('body').scrollTop(0);
+			$(document).scrollTop(0);
 		}else {
-			$('html').animate({scrollTop: 0},'fast');
+			$(document).animate({scrollTop: 0},'fast');
 		}
 	});
 	

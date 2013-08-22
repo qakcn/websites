@@ -1,80 +1,38 @@
-/* 覆盖主CSS属性 */
-body {
-	background-color: #dddddd;
-}
+
 section#main {
-	background-color: #dddddd;
+	background-image: url(bg.jpg);
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-position: left top;
+	padding: 0;
+	width: 6000px;
 }
 
-/* 加载时隐藏 */
-.hide_on_load {
-	display: none;
+div#layer_tree {
+	background-image: url(tree.png);
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-position: left top;
 }
 
-/* 主页幻灯片样式 */
-div#main_wrap {
-	height: 600px;
-	position: relative;
-}
-img.slideshow {
-	display: block;
-	position: absolute;
-	width: 1000px;
-	height: 600px;
-	top: 0;
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-div#slideshow_change {
-	position: absolute;
-	bottom: 0;
-}
-div#slideshow_change > div {
-	display: inline-block;
-	width: 196px;
-	height: 118px;
-	margin: 0 2px;
-	vertical-align: top;
-}
-div#slideshow_change > div > div {
-	overflow: hidden;
-	width:176px;
-	height: 0;
-	margin-top: 118px;
-	padding: 0 10px;
-	text-align: right;
-	text-decoration: none;
-	color: #f8f8f8;
-	background-color: rgba(0,0,0,0.6);
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-}
-div#slideshow_change > div.inshow > div {
-	height: 25px;
-	margin-top: 73px;
-	padding: 10px;
+div#layer_main {
+	background-image: url(main.png);
+	background-repeat: no-repeat;
+	background-position: left top;
 }
 
-/* 边栏样式 */
-aside#sidebar {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 125px;
-	box-shadow: none;
-}
-aside#sidebar > ul > li {
-	background-color: rgba(51,51,51,0.8);
-	box-shadow: none;
-}
-aside#sidebar > ul > li > header {
-	background-color: rgba(0,0,0,0.5);
-}
-div#news_feed li {
-	list-style: none;
-	margin-bottom: 10px;
+div.cbox {
+	float:left;
+	height: 500px;
+	width: 2000px;
 }
 
+div#layer_grass {
+	height:100px;
+	width:6000px;
+	clear: both;
+	background-image: url(grass.png);
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-position: left top;
+}
