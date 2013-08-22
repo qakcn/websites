@@ -9,8 +9,10 @@
 	<!-- 外部文件 -->
 	<link rel="stylesheet" href="../style.css" />
 	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAsqHGSM9lkpKKMeXBjNRCaAGvnptVlFw&sensor=false"></script>
 	<script src="../jquery.color-2.1.2.min.js"></script>
 	<script src="../main.js"></script>
+	<script src="map.js"></script>
 
 	<!-- 页面信息 -->
 	<title>关于 - 黄竹林生态土鸡养殖-云南·西双版纳·勐海</title>
@@ -25,9 +27,9 @@
 			<li class="logo"><a href="../"><img alt="Logo" src="../images/logo.png" title="黄竹林生态土鸡养殖" /></a></li>
 			<li class="dropdown_menu"><a href="./">关于</a>
 				<ul class="dropdown">
-					<li><a href="us.html">我们</a></li>
-					<li><a href="ideas.html">理念</a></li>
-					<li><a href="environment.html">环境</a></li>
+					<li><a href="#us">我们</a></li>
+					<li><a href="#ideas">理念</a></li>
+					<li><a href="#environment">环境</a></li>
 				</ul>
 			</li>
 			<li class="dropdown_menu"><a href="../business/">业务</a>
@@ -59,7 +61,32 @@
 	<!-- 主体部分 -->
 	<section id="main">
 		<div id="main_wrap">
-			<article class="left content_wrap">Fuck yeah!</article>
+			<div class="left">
+				<article class="content_wrap" id="us">
+					<h1>关于我们</h1>
+					<p>在食品安全问题日益严峻的今天，吃上安全放心的食品成为了一种挑战。</p>
+					<p>“既然我们不能获取放心的食物，为什么我们不去自己生产呢？”</p>
+					<p>基于这样的想法，我们来到了这个地方，位于祖国西南边陲的云南省西双版纳傣族自治州的一个小山村。青山环绕，绿水长流，在这个远离城市的喧嚣，远离工业的污染，远离密集的人群的地方，开始了我们的事业。</p>
+					<p>万事开头难。虽然确定了养殖的方针，但是要成一件事不是那么容易的。房屋的建设、饲料的采购、鸡舍的布置、鸡苗的选择，每一件事都要认真细致，任何一个环节都不能出现大问题。</p>
+					<p>养殖过程也不简单：鸡群的免疫、鸡舍的消毒、疾病的防治，同样不能懈怠。因为，每一个过程，都将对最终产出的鸡肉有着重要的影响。</p>
+					<p>最终，走上轨道之后，我们建立了这个网站，为的是更好地宣传自己，为的是为大家最放心的鸡肉。</p>
+					<p>健康、安全、生态，是我们永远的理念，是我们孜孜不倦的追求。</p>
+				</article>
+				<article class="content_wrap" id="ideas">
+					<h1>理念</h1>
+					<h2>健康</h2>
+					<p>玉米、鱼粉、豆粕、昆虫、青菜。这些就是我们的饲料的原料。所有原料都是安全无污染的，经过精心的配比，配合鸡的营养需求。饲养出健康的鸡，也为了您的健康。</p>
+					<h2>安全</h2>
+					<p>除了采用安全饲料之外，我们对所有鸡只都进行了免疫，除了保证鸡群的安全之外，也保证出厂的鸡都是安全无疾病的。同时，药物的使用也经过严格控制，所有药品都符合兽药GMP标准，用量都经过严格控制，不使用非必要的任何药物，保证最低的药物残留。</p>
+					<h2>生态</h2>
+					<p>除了远离城市、远离污染的环境外，我们对育成鸡都实行全面放养，鸡群自由地活动、寻找食物和饮水。保证饲养出来的鸡肉肉质细腻、香味浓郁。</p>
+				</article>
+				<article class="content_wrap" id="environment">
+					<h1>环境</h1>
+					<p>养殖场的位置如下面的地图所示，环境优美、空气清新、水源干净，是鸡群健康生长的有力保证。</p>
+					<div id="map" style="width:580px;height:400px;"><a href="http://j.map.baidu.com/SdNOM" title="在百度地图上查看黄竹林生态养殖场的位置" target="_blank"><img src="map.jpg" alt="黄竹林生态养殖场的位置"></a></div>
+				</article>
+			</div>
 			<aside id="sidebar" class="right">
 				<ul>
 					<li>

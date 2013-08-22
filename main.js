@@ -20,7 +20,7 @@ $(function(){
 	
 	//滚动显示返回顶部按钮
 	$(document).on('scroll',function(){
-		if($(this).scrollTop() > 400) {
+		if($(this).scrollTop() > 200) {
 			$('div#top_button').fadeIn();
 		}else {
 			$('div#top_button').fadeOut();
@@ -32,7 +32,7 @@ $(function(){
 		if(navigator.userAgent.match(/AppleWebKit/)) {
 			$(document).scrollTop(0);
 		}else {
-			$(document).animate({scrollTop: 0},'fast');
+			$('html').animate({scrollTop: 0},'fast');
 		}
 	});
 	

@@ -138,13 +138,27 @@ div#main_wrap {
 	margin: auto;
 }
 .content_wrap {
-	width: 660px;
+	width: 580px;
 	+width: 658px;
 	_width: 658px;
 	margin: 10px;
-	padding: 10px;
+	padding: 40px;
 	background-color: white;
 	box-shadow: 2px 2px 2px 2px #ccc;
+}
+.content_wrap h1 {
+	font-size: 35px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid black;
+}
+.content_wrap h2 {
+	font-size: 25px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid black;
+}
+.content_wrap p {
+	margin: 10px 0;
+	text-indent: 2em;
 }
 
 /* 边栏样式 */
@@ -194,7 +208,7 @@ div#top_button {
 	height: 80px;
 	position: fixed;
 	right: 0;
-	bottom: 60px;
+	bottom: 100px;
 	background-image: url(images/icons.png);
 	opacity: 0.5;
 }
