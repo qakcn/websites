@@ -59,7 +59,6 @@ nav#main_nav {
 nav#main_nav ul.nav_items > li {
 	width: 100px;
 	height: 80px;
-	font-size: 20px;
 	text-align: center;
 	float: left;
 	list-style: none;
@@ -72,7 +71,8 @@ nav#main_nav ul.nav_items li.logo {
 	height: 80px;
 	padding: 0;
 }
-nav#main_nav ul.nav_items li a {
+nav#main_nav ul.nav_items > li > a {
+	font-size: 26px;
 	display: block;
 	padding: 25px 5px;
 	width: 90px;
@@ -84,12 +84,15 @@ nav#main_nav ul.nav_items li.logo a {
 	padding: 0;
 }
 nav#main_nav ul.dropdown {
-	display: none;
+	overflow: hidden;
+	height: 0;
+}
+nav#main_nav ul.nav_items > li:hover ul.dropdown {
+	height: auto;
 }
 nav#main_nav ul.dropdown li {
 	list-style: none;
 	width: 100px;
-	height: 40px;
 	background-color: #333;
 	background-color: rgba(0,0,0,0.6);
 }
@@ -97,21 +100,23 @@ nav#main_nav ul.dropdown li:hover {
 	background: #000;
 }
 nav#main_nav ul.dropdown li a {
+	font-size: 23px;
 	display: block;
 	width: 100%;
-	height: 30px;
 	padding: 5px 0;
 	text-decoration: none;
 	color: #f8f8f8;
 }
 
+/* 搜索栏 */
 div#search_bar {
-	font-size: 20px;
+	font-size: 25px;
 	height: 30px;
 	margin: 20px 0;
 	padding: 5px;
 	float: right;
 	background-color: white;
+	color: #333;
 }
 div#search_bar label {
 	-moz-user-select: none;
@@ -137,54 +142,64 @@ div#main_wrap {
 	width: 1000px;
 	margin: auto;
 }
+div#main_container {
+	width: 680px;
+	float: left;
+}
 .content_wrap {
 	width: 580px;
-	+width: 658px;
-	_width: 658px;
-	margin: 10px;
-	padding: 40px;
+	margin: 20px;
+	padding: 30px;
 	background-color: white;
 	box-shadow: 2px 2px 2px 2px #ccc;
 }
 .content_wrap h1 {
 	font-size: 35px;
-	padding-bottom: 10px;
-	border-bottom: 2px solid black;
+	padding-bottom: 5px;
+	margin: 5px 0;
+	border-bottom: 2px solid #333;
+	color: #333;
 }
 .content_wrap h2 {
 	font-size: 25px;
-	padding-bottom: 10px;
-	border-bottom: 1px solid black;
+	padding-bottom: 5px;
+	margin: 5px;
+	border-bottom: 1px solid #666;
+	color: #666;
 }
 .content_wrap p {
 	margin: 10px 0;
 	text-indent: 2em;
+	color: #333;
 }
 
 /* 边栏样式 */
 aside#sidebar {
-	width: 300px;
+	width: 320px;
 }
 aside#sidebar > ul > li {
 	list-style: none;
-	margin: 10px;
+	margin: 20px;
 	width:280px;
 	color: #f8f8f8;
 	background-color: #7f7f7f;
 	box-shadow: 2px 2px 2px 2px #ccc;
 }
 aside#sidebar > ul > li > header {
-	width: 260px;
 	padding: 10px;
-	background-color: black;
-	font-size: 16px;
+	background-color: #333;
+	font-size: 20px;
 }
-aside#sidebar > ul > li > div {
-	width: 260px;
+aside#sidebar > ul > li > * {
 	padding: 10px;
 	font-size: 14px;
 }
-
+aside#sidebar ul#news_feed {
+	list-style: none;
+}
+aside#sidebar ul#news_feed li {
+	margin: 5px 0;
+}
 
 /* 脚部样式 */
 footer#main_footer {
@@ -209,7 +224,8 @@ div#top_button {
 	position: fixed;
 	right: 0;
 	bottom: 100px;
-	background-image: url(images/icons.png);
+	background-image: url(images/icons.svg);
+	background-size: 80px;
 	opacity: 0.5;
 }
 div#top_button:hover {

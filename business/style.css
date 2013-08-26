@@ -1,0 +1,34 @@
+ul#product_list {
+	width: 640px;
+	margin: 20px;
+	list-style: none;
+}
+ul#product_list li {
+	float: left;
+	height: 580px;
+	width: 193.33px;
+	padding: 10px;
+
+}
+ul#product_list h1 {
+	font-size: 30px;
+	color: #fefefe;
+	border: none;
+}
+ul#product_list p {
+	display: none;
+	color: #fefefe;
+}
+ul#product_list p.digest {
+	display: block;
+}
+
+ul#product_list li:nth-child(1) {
+	background-color: limegreen;
+}
+ul#product_list li:nth-child(2) {
+	background-color: dodgerblue;
+}
+ul#product_list li:nth-child(3) {
+	background-color: darkorange;
+}
