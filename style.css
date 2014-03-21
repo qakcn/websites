@@ -39,6 +39,9 @@ body > header {
 #menuico {
 	display: none;
 }
+#menuico.hide {
+	
+}
 nav,nav ul,nav li{
 	padding: 0;
 	margin: 0;
@@ -84,6 +87,31 @@ nav li {
 #data::after {
 	content: "\e606";
 }
+#search-submit{
+	font-family: "yntuji-icon";
+}
+
+#search-bar {
+	vertical-align: middle;
+	display: inline-block;
+	padding: 0;
+	margin: 2em 0.5em;
+	height: 2em;
+	background-color: #f8f8f8;
+	float: right;
+}
+#keyword,#search-submit {
+	font-size: 1em;
+	height: 1.5em;
+	border: none;
+	margin: 0;
+	padding: 0.25em;
+	background-color: #f8f8f8;
+}
+#keyword {
+	width: 20em;
+}
+
 
 /* Style for phone */
 @media screen and (max-width: 960px) {
@@ -108,15 +136,13 @@ nav li {
 	#menuico.show {
 		background-color: #009d4e;
 	}
-	#logo {
-		display: none;
-	}
-	nav {
+	#logo,nav {
 		display: none;
 	}
 	nav.show {
 		background-color: #009d4e;
 		display: block;
+		padding-bottom: 2px;
 	}
 	nav li.current {
 		padding: 0.4em;
@@ -124,10 +150,25 @@ nav li {
 		padding-bottom: 0.2em;
 		border-bottom: 0.2em solid #f8f8f8;
 	}
+	#search-bar {
+		margin: 0.5em;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#keyword {
+		width: 15em;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#keyword {
+		width: 9.5em;
+	}
 }
 
 @media screen and (max-width: 500px) {
-	nav ul,nav li,#search-link{
+	nav ul,nav li,#search-link,#search-bar.show{
 		display: block;
 	}
 	nav li {
@@ -164,5 +205,15 @@ nav li {
 		border: none;
 		padding-left: 0.5em;
 		border-left: 0.3em solid #f8f8f8;
+	}
+	#search-bar,#menuico.hide,body>header>h1.hide {
+		display: none;
+	}
+	#search-bar {
+		float: none;
+	}
+	#keyword {
+		width: calc(100% - 2.5em);
+		width: -webkit-calc(100% - 2.5em);
 	}
 }
